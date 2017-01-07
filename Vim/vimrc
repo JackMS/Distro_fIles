@@ -1,0 +1,41 @@
+runtime vimrc
+
+syntax enable
+
+filetype indent on
+
+set number
+
+set term=$TERM
+
+set backspace=2
+
+set mouse=a
+
+set guifont=Inconsolata\ for\ Powerline:10 
+
+set pastetoggle=<F2>
+
+set background=dark " dark | light"
+
+colorscheme solarized
+
+set nocompatible
+
+set t_Co=16  
+
+let g:minBufExplForceSyntaxEnable = 1
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
+ 
+if ! has('gui_running')
+   set ttimeoutlen=10
+   augroup FastEscape
+      autocmd!
+      au InsertEnter * set timeoutlen=0
+      au InsertLeave * set timeoutlen=1000
+   augroup END
+endif
+ 
+set laststatus=2 " Always display the statusline in all windows
