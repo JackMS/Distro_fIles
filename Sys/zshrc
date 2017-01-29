@@ -29,9 +29,8 @@ if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.
 fi
 
 #Powerline, which is currently broken
-#if [[ -f /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-#	. /usr/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh 
-#fi
+
+. /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 
 case $TERM in
 	termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
